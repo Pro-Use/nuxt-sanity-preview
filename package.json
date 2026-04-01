@@ -1,6 +1,6 @@
 {
   "name": "nuxt-sanity-preview",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Nuxt module providing useSanityProxyQuery — serves Sanity draft content via a token-validated server proxy when preview mode is active, and falls back to the standard production query otherwise",
   "repository": "https://github.com/Pro-Use/nuxt-sanity-preview",
   "license": "MIT",
