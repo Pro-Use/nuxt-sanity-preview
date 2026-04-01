@@ -1,11 +1,11 @@
 export default defineNuxtConfig({
   modules: ['nuxt-sanity-preview', '@nuxtjs/sanity'],
   devtools: { enabled: true },
-  compatibilityDate: 'latest',
 
   runtimeConfig: {
     previewSecret: process.env.NUXT_PREVIEW_SECRET,
   },
+  compatibilityDate: 'latest',
 
   sanity: {
     projectId: 'j1o4tmjp',

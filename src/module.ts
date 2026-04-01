@@ -19,8 +19,8 @@ export default defineNuxtModule<ModuleOptions>({
 
     // Inject previewSecret into private runtime config so the server handler can validate tokens.
     // The consuming app can set NUXT_PREVIEW_SECRET env var or pass previewSecret via module options.
-    nuxt.options.runtimeConfig.previewSecret =
-      nuxt.options.runtimeConfig.previewSecret || options.previewSecret || ''
+    nuxt.options.runtimeConfig.previewSecret
+      = nuxt.options.runtimeConfig.previewSecret || options.previewSecret || ''
 
     // Auto-import useSanityProxyQuery into consuming apps
     addImportsDir(resolver.resolve('./runtime/composables'))

@@ -7,9 +7,19 @@
       {{ previewEnabled ? '🟢 active — showing draft content' : '⚪ inactive — showing published content' }}
     </div>
 
-    <p v-if="pending">Loading movies…</p>
-    <p v-else-if="error" style="color: red;">Error: {{ error.message }}</p>
-    <ul v-else style="list-style: none; padding: 0; display: grid; gap: 0.75rem;">
+    <p v-if="pending">
+      Loading movies…
+    </p>
+    <p
+      v-else-if="error"
+      style="color: red;"
+    >
+      Error: {{ error.message }}
+    </p>
+    <ul
+      v-else
+      style="list-style: none; padding: 0; display: grid; gap: 0.75rem;"
+    >
       <li
         v-for="movie in movies"
         :key="movie._id"
