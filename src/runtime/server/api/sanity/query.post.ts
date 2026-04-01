@@ -1,3 +1,4 @@
+import { useRuntimeConfig, useSanity } from '#imports'
 import { defineEventHandler, readBody } from 'h3'
 
 export default defineEventHandler(async (event) => {
